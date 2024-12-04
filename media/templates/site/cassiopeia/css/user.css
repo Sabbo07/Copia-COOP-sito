@@ -1,0 +1,51 @@
+header .mod-finder__search.input-group {
+    position: relative;
+    top: -150px;
+}
+
+
+
+
+/* Stile normale: mostra la barra completa */
+.mod-finder__search.input-group {
+    display: flex; /* Mantiene il layout orizzontale */
+    align-items: center;
+}
+
+.mod-finder__search .form-control {
+    display: block; /* Mostra il campo di input */
+    width: 100%; /* Occupa tutto lo spazio disponibile */
+}
+
+.mod-finder__search .search-text {
+    display: inline-block; /* Mostra il testo del pulsante */
+}
+
+/* Stile responsivo: mostra solo l'icona della lente di ingrandimento */
+@media (max-width: 768px) {
+    .mod-finder__search.input-group {
+        width: auto; /* Adatta la larghezza */
+        position: relative;
+    top: -150px;
+    left: 70px;
+    }
+
+    .mod-finder__search .form-control {
+        display: none; /* Nasconde il campo di input */
+    }
+
+    .mod-finder__search .search-text {
+        display: none; /* Nasconde il testo "Cerca" */
+    }
+
+    .mod-finder__search .btn-search {
+        padding: 10px; /* Adatta le dimensioni del pulsante */
+        display: flex; /* Mostra solo la lente di ingrandimento */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mod-finder__search .btn-search .icon-search {
+        font-size: 1.5em; /* Aumenta la dimensione dell'icona per una migliore visibilità */
+    }
+}
